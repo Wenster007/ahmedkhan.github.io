@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PortFolio</title>
+
+    <script src="https://kit.fontawesome.com/1fa4e677ab.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./CSS/style.css">
+
+
+</head>
+
+<body>
+    <div class="container">
+                
+        <div class="header">
+            <div class="logo">Port<span>Folio</span></div>
+
+            <div class="navbar">
+                <nav>
+                    <ul id="menulist">
+                        <li><a href="#aboutMe">About Me</a></li>
+                        <li><a href="#myServices">My Services</a></li>
+                        <li><a href="#myProject">My Projects</a></li>
+                        <li><a href="#myContact">Contact Me</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="button"><button type="button"><a href="https://wa.me/923149958999?text=">WhatsApp Me</a></button>
+            </div>
+
+            <a href="#" class="toggle-button" onclick="togglemenu()">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+        </div>
+
+
+        
+        <div class="second">
+            <div class="introduction">
+                <h4>Hello, My name is</h4>
+                <h1>Ahmed <span>Khan</span></h1>
+                <h3>I am a Web Developer.</h3>
+                <button class="btn"><a href="#secondPhase">Know More</a></button>
+            </div>
+        </div>
+
+    </div>
+    
+    <div class="row" id="aboutMe">
+        <div class="myImage"><img src="./img/ahmed.jfif"></div>
+
+        <div class="aboutMe">
+            <h1>About Me</h1>
+            <h3>Front End <span>Developer</span></h3>
+            <p>I am a Front End Web Developer and can provide clean code.
+                I can Make website interactive with web animations. I am working
+                on improving my skills further. A great team player having aim to
+                become a full stack developer in near future. Having strong Grip on
+                Programming Fundamentals and DSA concepts.</p>
+        </div>
+    </div>
+
+
+    <div class="services" id="myServices">
+        <div class="title">
+            <h1>My Services</h1>
+        </div>
+
+        <div class="box">
+            <div class="card">
+
+                <i class="fa-solid fa-users"></i>
+                <h5>Responsive Website</h5>
+
+                <div class="pra">
+                    <p>Every Website should be built with two primary goals in mind: Firstly, it needs to work across
+                        all devices.
+                        I can provide you with websites which are ready to use on all devices providing good customer
+                        experience.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <i class="fa-sharp fa-solid fa-gauge-simple-high"></i>
+                <h5>Fast Websites</h5>
+
+                <div class="pra">
+                    <p>I can provide you with websites which are fast and you never have to loose any customer due to
+                        slow website loading and enhance your Website Experience. Slow websites are like an enemy to
+                        your buisness. Make them fast now.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <i class="fa-sharp fa-solid fa-up-right-and-down-left-from-center"></i>
+                <h5>Clean Code</h5>
+
+                <div class="pra">
+                    <p>Every buisness grows over time and need to expand their website as well. I provide you with the
+                        cleanest possible code so you can easily expand your website whithout the need to build it from
+                        scratch.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="myProjects" id="myProject">
+        <h1>My Projects</h1>
+
+        <div class="cards">
+            <div class="card1">
+                <h3>TOUCH TYPING WEBSITE</h3>
+
+                <a href="https://wenster007.github.io/KeysListener.github.io/"><img src="./img/keyboard.PNG" alt="keyboard Website"></a>
+
+            </div>
+
+            <div class="card1">
+                <h3>RACE TO 100</h3>
+
+                <a href="https://wenster007.github.io/RaceTo100.github.io/"><img src="./img/race.PNG" alt="Race to 100 Website"></a>
+
+            </div>
+
+            <div class="card1">
+                <h3>PORTFOLIO WEBSITE</h3>
+
+                <a href="#"><img src="./img/portfolio.PNG" alt="portfolio Website"></a>
+
+            </div>
+
+            <div class="card1">
+                <h3>MORE PROJECTS</h3>
+
+                <a href="https://github.com/Wenster007"><img src="./img/github.png" alt="Github Website"></a>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="myContacts" id="myContact">
+        <h1>GET IN TOUCH WITH ME</h1>
+
+        <div class="socials">
+            <a href="https://www.instagram.com/_iahmadkhan/"><i class="fa-brands fa-instagram" id="insta"></i></a>
+            <a href="https://www.linkedin.com/in/ahmed-khan-163b78243/"><i class="fa-brands fa-linkedin" id="linkedin"></i></a>
+            <a href="https://github.com/Wenster007"><i class="fa-brands fa-github" id="github"></i></a>
+        </div>
+    </div>
+
+    
+    <script>
+        const toggleButton = document.getElementsByClassName('toggle-button')[0];
+
+        const navBarLinks = document.getElementsByClassName('navbar')[0];
+
+        toggleButton.addEventListener('click', () => {
+            navBarLinks.classList.toggle('active');
+        })
+    </script>
+</body>
+
+</html>
